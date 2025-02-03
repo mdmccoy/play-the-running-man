@@ -1,0 +1,45 @@
+<head>
+  <title>The Running Man Game</title>
+</head>
+
+<body class="full-screen-image">
+  <div class="content-overlay">
+    <p>Get ready to run...</p>
+  </div>
+</body>
+
+<style>
+  @font-face {
+    font-family: "Running Man";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("modern-vision.ttf") format("truetype");
+  }
+
+  body {
+    font-family: "Running Man";
+  }
+
+  .full-screen-image {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    background-image: url('the_running_man.jpg');
+    background-size: cover; /* Make sure the image covers the full div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repeating */
+  }
+
+  .content-overlay {
+    position: absolute;
+    top: 50%; /* Center content vertically */
+    left: 50%; /* Center content horizontally */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional background for readability */
+    padding: 20px;
+    border-radius: 8px;
+    color: red;
+}
+</style>
